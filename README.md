@@ -1,1 +1,1 @@
-# express-resize
+# express-resizer
