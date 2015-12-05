@@ -1,6 +1,6 @@
 # Express-Resize
 
-**Express middleware to resize images on the fly when requesting them.**
+**Express middleware to resize images on the fly.**
 
 ## Installation
 
