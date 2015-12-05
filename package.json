@@ -1,16 +1,16 @@
 {
-  "name": "express-resizer",
+  "name": "express-resize",
   "version": "1.0.0",
   "description": "Express middleware to resize images on the fly using simple http requests",
   "main": "index.js",
   "scripts": {
     "preinstall": "npm config set msvs_version 2013 --global",
     "test": "mocha test",
-    "docs": "docha"
+    "docs": "docha test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeeWizWow/express-resizer.git"
+    "url": "git+https://github.com/GeeWizWow/express-resize.git"
   },
   "keywords": [
     "express",
@@ -19,9 +19,9 @@
   "author": "Finn Scott",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GeeWizWow/express-resizer/issues"
+    "url": "https://github.com/GeeWizWow/express-resize/issues"
   },
-  "homepage": "https://github.com/GeeWizWow/express-resizer#readme",
+  "homepage": "https://github.com/GeeWizWow/express-resize#readme",
   "dependencies": {
     "sharp": "^0.12.0"
   },
