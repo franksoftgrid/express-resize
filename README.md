@@ -1,4 +1,24 @@
-# params
+# Express-Resize
+
+Express middleware to resize images on the fly when requesting them. 
+
+Need a small image for mobiles?
+
+Just put the full sized image in your content directory and get *http://yoursite/image.jpg?width=150*
+
+Need to crop an image to a square format for an avatar?
+
+get *http://yoursite/avatar.jpg?width=100&height=100*
+
+Suported formats are: jpg, jpeg, png, gif, svg.
+
+## Todo
+
+* Provide pptions for crop positioning
+
+## Tests
+
+### params
  params should return an object with two keys: height, width
 
 ```
@@ -52,7 +72,7 @@ assert.equal(null, result);
 ```
 
 
-# relativePath
+### relativePath
  relativePath should return a path without leading slash
 
 ```
@@ -62,7 +82,7 @@ assert.equal(true, (result.charAt(0) !== '/'));
 ```
 
 
-# parseReqUrl
+### parseReqUrl
  parseReqUrl return an array
 
 ```
@@ -81,7 +101,7 @@ assert.equal(2, result.length);
 ```
 
 
-# assetAvaialble
+### assetAvaialble
  assetAvaialble should callback when asset is available
 
 ```
