@@ -1,20 +1,24 @@
 # Express-Resize
 
-Express middleware to resize images on the fly when requesting them. 
+**Express middleware to resize images on the fly when requesting them. **
 
-Need a small image for mobiles?
+## Usage
 
-Just put the full sized image in your content directory and get *http://yoursite/image.jpg?width=150*
+Just put the full sized image in your content directory.
 
-Need to crop an image to a square format for an avatar?
+* Need a small image for mobiles?
+
+call *http://yoursite/image.jpg?width=150*
+
+* Need to crop an image to a square format for an avatar?
 
 get *http://yoursite/avatar.jpg?width=100&height=100*
 
-Suported formats are: jpg, jpeg, png, gif, svg.
+*Suported formats are: jpg, jpeg, png, gif, svg.*
 
 ## Todo
 
-* Provide pptions for crop positioning
+* Provide options for crop positioning
 
 ## Tests
 
