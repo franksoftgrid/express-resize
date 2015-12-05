@@ -2,6 +2,22 @@
 
 **Express middleware to resize images on the fly when requesting them.**
 
+## Installation
+
+`npm install --S express-resize`
+
+```
+var express = require('express');
+var resize = require('express-resize');
+
+var app = express();
+
+app.use(resize);
+
+app.listen(3030);
+
+```
+
 ## Usage
 
 Just put the full sized image in your content directory.
