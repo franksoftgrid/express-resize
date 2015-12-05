@@ -6,6 +6,8 @@
 
 `npm install --S express-resize`
 
+## Usage
+
 ```
 var express = require('express');
 var resize = require('express-resize');
@@ -18,9 +20,7 @@ app.listen(3030);
 
 ```
 
-## Usage
-
-Just put the full sized image in your content directory.
+Just put the full sized image in your content directory and request it with the width and or height parameters. For example:
 
 * Need a small image for mobiles? get *http://yoursite/image.jpg?width=150*
 
