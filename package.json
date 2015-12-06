@@ -1,6 +1,6 @@
 {
   "name": "express-resize",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Express middleware to resize images on the fly using simple http requests",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,10 @@
   },
   "keywords": [
     "express",
-    "middleware"
+    "middleware",
+    "resize",
+    "sharp",
+    "nodejs"
   ],
   "author": "Finn Scott",
   "license": "ISC",

@@ -8,6 +8,8 @@
 
 ## Usage
 
+**If you are using other middleware make sure to include express-resize before them!**
+
 ```
 var express = require('express');
 var resize = require('express-resize');
@@ -15,9 +17,9 @@ var resize = require('express-resize');
 var app = express();
 
 app.use(resize);
+app.use(express.static());
 
 app.listen(3030);
-
 ```
 
 Just put the full sized image in your content directory and request it with the width and or height parameters. For example:
