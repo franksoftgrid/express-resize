@@ -26,7 +26,7 @@ Just put the full sized image in your content directory and request it with the 
 
 * Need to crop an image to a square format for an avatar? get *http://yoursite/avatar.jpg?width=100&height=100*
 
-*Suported formats are: jpg, jpeg, png, gif, svg.*
+*Supported formats are: jpg, jpeg, png, gif, svg.*
 
 ## Todo
 
@@ -130,7 +130,7 @@ util.assetAvailable(path, function (err) {
 ```
 
 
- assetAvaialble should vallback with error when asset is unavailable
+ assetAvaialble should callback with error when asset is unavailable
 
 ```
 var path = 'tests/test.jpg';
