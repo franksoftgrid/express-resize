@@ -52,7 +52,6 @@ function resizer(req, res, next) {
 
     }
     else {
-        // return next();
-        return res.sendFile(path);
+        return next();
     }
 }
