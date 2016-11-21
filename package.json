@@ -1,6 +1,6 @@
 {
   "name": "express-resize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express middleware to resize images on the fly using simple http requests",
   "main": "index.js",
   "scripts": {
