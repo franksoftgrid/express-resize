@@ -25,7 +25,7 @@ function resizer(req, res, next) {
     var requestedAsset = util.parseReqURL(path);
     var ext = pathUtil.extname(requestedAsset).toLowerCase();
 
-    var formats = ['.jpg', '.jpeg', '.png', '.gif', '.svg'];
+    var formats = ['.jpg', '.jpeg', '.png', '.svg'];
 
     if (formats.indexOf(ext) !== -1) {
 
