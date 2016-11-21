@@ -25,7 +25,7 @@ function resizer(req, res, next) {
     var requestedAsset = util.parseReqURL(path);
     var ext = pathUtil.extname(requestedAsset).toLowerCase();
 
-    var formats = ['.jpg', '.jpeg', '.png', '.svg'];
+    var formats = ['.jpg', '.jpeg', '.gif', '.png', '.svg'];
 
     if (formats.indexOf(ext) !== -1) {
 
@@ -38,12 +38,19 @@ function resizer(req, res, next) {
 
             if (reqParams !== null && (reqParams.hasOwnProperty('height') || reqParams.hasOwnProperty('width'))) {
 
-                res.writeHead(200, {'Content-Type': 'image/' + ext.slice(1)});
+                if (ext == '.gif') {
 
-                return sharp(path)
-                    .resize(reqParams.width, reqParams.height)
-                    .progressive()
-                    .pipe(res);
+                  // pass through gifs - sharp doesn't support gif output
+                  return res.sendFile(process.cwd() + '/' + path);
+
+                } else {
+                    res.writeHead(200, {'Content-Type': 'image/' + ext.slice(1)});
+
+                    return sharp(path)
+                        .resize(reqParams.width, reqParams.height)
+                        .progressive()
+                        .pipe(res);
+                }
             }
 
             return res.sendFile(process.cwd() + '/' + path);
@@ -55,3 +62,4 @@ function resizer(req, res, next) {
         return next();
     }
 }
+
