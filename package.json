@@ -1,6 +1,6 @@
 {
   "name": "express-resize",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Express middleware to resize images on the fly using simple http requests",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeeWizWow/express-resize.git"
+    "url": "git+https://github.com/franksoftgrid/express-resize.git"
   },
   "keywords": [
     "express",
@@ -22,11 +22,11 @@
   "author": "Finn Scott",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GeeWizWow/express-resize/issues"
+    "url": "https://github.com/franksoftgrid/express-resize/issues"
   },
-  "homepage": "https://github.com/GeeWizWow/express-resize#readme",
+  "homepage": "https://github.com/franksoftgrid/express-resize#readme",
   "dependencies": {
-    "sharp": "^0.16.2"
+    "sharp": "^0.20.1"
   },
   "devDependencies": {
     "docha": "^0.1.2",
