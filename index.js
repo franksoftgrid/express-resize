@@ -23,7 +23,7 @@ function resizer(req, res, next) {
 
     var path = util.relativePath(req._parsedUrl.pathname);
     var requestedAsset = util.parseReqURL(path);
-    var ext = pathUtil.extname(requestedAsset).toLowerCase();
+    var ext = pathUtil.extname(path).toLowerCase();
 
     var formats = ['.jpg', '.jpeg', '.gif', '.png', '.svg'];
 
@@ -47,8 +47,9 @@ function resizer(req, res, next) {
                     res.writeHead(200, {'Content-Type': 'image/' + ext.slice(1)});
 
                     return sharp(path)
-                        .resize(reqParams.width, reqParams.height)
-                        .progressive()
+                        .resize(reqParams.width, reqParams.height, {
+                            kernel: sharp.kernel.nearest
+                        })
                         .pipe(res);
                 }
             }
